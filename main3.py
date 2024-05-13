@@ -1,33 +1,33 @@
-#cars = ["bmw", "audi", "kia", "vaz"]
-# print( len(cars) )
-# print(cars[0])
-# print(cars[1])
-# print(cars[2])
+cars = ["bmw", "audi", "kia", "vaz"]
+print( len(cars) )
+print(cars[0])
+print(cars[1])
+print(cars[2])
 
 
-# for car in cars:
-#     print(car)
+for car in cars:
+    print(car)
 
-# i = 0
-# while i<len(cars):
-#     print(cars[i])
-#     i += 1 # i = i + 1
+i = 0
+while i<len(cars):
+    print(cars[i])
+    i += 1 # i = i + 1
 
-# marks = [5,5,4,5,5,5,4,4]
-# sum = 0
-# for mark in marks:
-#     sum = sum + mark
-#
-# print(sum/len(marks))
-# print( round(sum/len(marks)) )
-# import math
+marks = [5,5,4,5,5,5,4,4]
+sum = 0
+for mark in marks:
+    sum = sum + mark
+
+print(sum/len(marks))
+print( round(sum/len(marks)) )
+import math
 # # Найти максимальный нечетный элемент списка
-# nums = [342,456,233,74,221,22]
-# max = -math.inf
-# for num in nums:
-#     if num>max and num % 2 != 0:
-#         max = num
-# print(max)
+nums = [342,456,233,74,221,22]
+max = -math.inf
+for num in nums:
+    if num>max and num % 2 != 0:
+        max = num
+print(max)
 
 # имеется список символов chars = ['К','Л','М','Н']
 # 1) необходимо вывести на экран все возможные комбинации 4х символьных слов

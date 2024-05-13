@@ -11,7 +11,7 @@ class Hotel:
         roomNumber = int(input("Введите номер комнты для бронирования: "))
         error = True
         for room in self.rooms:
-            if roomNumber == room.number and not room.reserved:
+            if (roomNumber == room.number and not room.reserved):
                 room.reserved = True
                 error = False
                 print("Комната "+str(roomNumber)+" забронирована")
@@ -21,6 +21,16 @@ class Hotel:
         for room in self.rooms:
             if room.reserved:
                 print(room.number)
+    def filter(self):
+        userSelectWifi = input("Нужен ли в комнате wifi? Да/Нет: ")
+        userSelectTv = input("Нужен ли в комнате tv? Да/Нет: ")
+        for room in self.rooms:
+            if(
+                    (room.wifi and userSelectWifi == "Да" or not room.wifi and userSelectWifi == "Нет")
+                    and (room.tv and userSelectTv == "Да" or not room.wifi and userSelectTv == "Нет")
+            ):
+                print(room.number)
+
 class Room:
     def __init__(self, number, place, tv, wifi):
         self.number = number
@@ -49,6 +59,8 @@ def start():
             hotel.reserveRoom()
         elif command == "getReservedRooms":
             hotel.getReservedRooms()
+        elif command == "filter":
+            hotel.filter()
         command = input("Введите команду: ")
 
 
