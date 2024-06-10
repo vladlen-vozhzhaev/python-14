@@ -102,3 +102,9 @@ def calcLengthVector(x1, y1, x2, y2):
     print(f"Длина вектора с точками x1={x1} y1={y1} и x2={x2} y2={y2} ровняется: {length}")
 
 calcLengthVector(int(input("Введите число")),int(input("Введите число")), int(input("Введите число")), int(input("Введите число")))
+
+# def f():
+#     print("Hello")
+#     f()
+#
+# f()
