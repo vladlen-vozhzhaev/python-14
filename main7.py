@@ -15,7 +15,7 @@ B = [
 #     for i in range(2):
 #         for j in range(2):
 #             # A[i][i]*B[i][j]
-
+# https://thecode.media/wp-content/uploads/2021/03/11.jpg
 # matrix = [
 #     [2,6],
 #     [3,7],
