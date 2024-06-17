@@ -3,10 +3,14 @@ class Animal:
         self.nickname = nickname
         self.age = age
         self.breed = breed
+        self.__hp = 100
     def run(self):
         print(f"{self.nickname} побежал(а)")
     def speak(self):
         print("Звук не назначен")
+
+    def get_private_hp(self):
+        return self.__hp
 
 class Cat(Animal):
     def __init__(self, nickname, age, breed):
@@ -35,3 +39,4 @@ bird1.run()
 bird1.fly()
 cat1.speak()
 bird1.speak()
+print(horse1.get_private_hp())
